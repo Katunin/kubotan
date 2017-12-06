@@ -1,0 +1,330 @@
+/* RESET START */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: #34404b;
+    font: 20px/1 'Avenir_Roman', sans-serif;
+    background-color: #faf8f8;
+    background-color: #eee;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 25px;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #6bb9ff;
+    text-decoration: none;
+}
+p {
+    font-size: 20px;
+}
+img {
+    max-width: 100%;
+}
+input, textarea, button {
+    outline: none;
+    border: none;
+}
+::-webkit-input-placeholder {color:#030303;}
+::-moz-placeholder          {color:#030303;}/* Firefox 19+ */
+:-moz-placeholder           {color:#030303;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#030303;}
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;}
+input:-moz-placeholder      {text-overflow:ellipsis;}
+input:-ms-input-placeholder {text-overflow:ellipsis;}
+
+/* плавное изменение прозрачности  placeholder-а при фокусе */
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+textarea {
+    resize: vertical;
+}
+button {
+    cursor: pointer;
+}
+
+
+/* RESET END */
+
+/* BASIC CLASSES START */
+.flex-container {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+.content-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: red;
+    display: inline-block;
+    color: #fff;
+}
+.btn:hover {
+    color: #000;
+}
+/* BASIC CLASSES END */
+
+/* HEADER START */
+header {
+    background-color: #fff;
+    text-align: center;
+}
+header div {
+    width: 33%;
+}
+header img {
+    width: 30%;
+}
+.logo-desc {
+    margin-right: auto;
+}
+/* HEADER END */ 
+
+/* PROMO START */
+.promo {
+    height: 100vh;
+    background-image: url(../img/promo-bg.jpg);
+    background-size: cover;
+}
+.promo-title {
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 30px;
+}
+.promo-title h1 {
+    font-size: 60px;
+}
+.promo-title p {
+    font-size: 24px;
+    padding: 30px 0;
+}
+/* PROMO END */
+
+/* OUR FEATURES START */
+.our-features {
+    height: 80vh;
+}
+.feature-item {
+    text-align: center;
+    max-width: 31%;
+}
+.feature-item-icon {
+    border: 1px solid #000;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    transform: rotate(45deg);
+}
+.feature-item-icon:hover {
+    background-color: #000;
+    color: #fff;
+    transition: background .5s ease;
+    border: 1px solid #fff;
+}
+.feature-item i {
+    font-size: 50px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+}
+.feature-item-desc {
+    padding: 0 20px;
+}
+.feature-item-desc .title {
+    font-size: 21px;
+    display: block;
+    margin: 50px 0 10px;
+}
+.feature-item-desc .details {
+    font-size: 16px;
+}
+/* OUR FEATURES END */
+
+/* STORE START */
+.store {
+    min-height: 100vh;
+}
+.store h2 {
+    background-color: red;
+    padding: 50px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.store-list {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.product-item {
+    flex-direction: column;
+    display: inline-block;
+    padding: 30px 20px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.product-item .title {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.product-item img {
+    margin-bottom: 30px;
+}
+.price {
+    margin-bottom: 20px;
+}
+.price .regular-price {
+    text-decoration: line-through;
+}
+.price .sale-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+.stock {
+    margin-bottom: 30px;
+    color: green;
+}
+.read-more {
+    border-bottom: 1px dashed #000;
+    margin-top: 10px;
+    font-size: 18px;
+}
+/* STORE END */
+
+/* DELIVERY START */
+.delivery {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.delivery h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.delivery .payment-title {
+    margin-bottom: 0;
+}
+.post-logo {
+    width: 40%;
+}
+.post-desc {
+    width: 60%;
+}
+
+.payment-type {
+    max-width: 30%;
+    line-height: 1.5em;
+    font-size: 12px;
+    padding: 0 20px 20px;
+    margin: 20px 0;
+}
+.payment-type img {
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+.payment-type p {
+    margin-top: 20px;
+}
+/* DELIVERY END */
+
+/* SALE PROPOSAL START */
+.sale-proposal {
+    height: 70vh;
+    background-color: #000;
+}
+.sale-proposal {
+    position: relative;
+    background-image: url(../img/danger-bg.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+.sale-proposal:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+.sale-proposal-title {
+    z-index: 2;
+    color: #fff;
+}
+.clarification {
+    display: block;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+}
+/* SALE PROPOSAL END */
+
+/* FOOTER START */
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+footer div {
+    width: 33%;
+}
+footer img {
+    width: 30%;
+}
+.logo-desc {
+    margin-right: auto;
+}
+/* FOOTER END */
